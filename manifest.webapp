@@ -1,0 +1,41 @@
+{
+  "name": "Push App",
+  "description": "Simple Push app",
+  "launch_path": "/index.html",
+  "orientation": "portrait",
+  "type": "privileged",
+  "developer": {
+    "name": "Borja Salguero & Francisco Jordano",
+    "url": "https://github.com/firefoxosedu"
+  },
+  "locales": {
+    "es": {
+      "name": "Demo Simple Push",
+      "description": "Aplicación de demostracion de Push en FirefoxOS"
+    },
+    "en-US": {
+      "name": "Push App",
+      "description": "FirefoxOS Simple Push demo app"
+    }
+  },
+  "permissions": {
+    "desktop-notification": {
+      "description": "Used to present notifications"
+    },
+    "push": {
+      "description": "Used to receive push notifications"
+    },
+    "systemXHR": {
+      "description": "Used to fetch data from server side"
+    }
+  },
+  "messages": [
+    { "notification": "/index.html" },
+    { "push": "/index.html"}
+  ],
+  "default_locale": "en-US",
+  "icons": {
+    "128": "/icons/128.png",
+    "60": "/icons/60.png"
+  }
+}
